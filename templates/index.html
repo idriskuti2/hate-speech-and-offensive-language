@@ -1,0 +1,12 @@
+<div class="login">
+  <h1> Offensive text prediction </h1>
+    <h3> Enter text to below to predict if it is Offensive</h3>
+  <form action="{{url_for('predict')}}" method="post">
+    <input type="text" name="Tweet" placeholder="Tweet" required = "required">
+    <button type="submit" class="btn">Predict</button>
+
+  </form>
+  <br>
+  <br>
+  {{prediction_text}}
+</div>
